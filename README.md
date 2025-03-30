@@ -80,7 +80,7 @@ VITE_APP_API_URL=http://localhost:5000/api
 - **POST /api/auth/register**
 
   - Register a new user
-  - Body: `{ "email": "string", "password": "string", "name": "string" }`
+  - Body: `{ "email": "string", "password": "string", "name": "string", "dateOfBirth": "Date" }`
 
 - **POST /api/auth/login**
 
@@ -95,23 +95,6 @@ VITE_APP_API_URL=http://localhost:5000/api
 
 - Frontend: `npm run dev` (Runs at http://localhost:5173)
 - Backend: `npm run dev` (API at http://localhost:5000)
-
-## Deployment
-
-### Frontend
-
-```bash
-cd frontend
-npm run build # Deploy the 'dist' folder
-```
-
-### Backend
-
-```bash
-cd backend
-npm install --production
-npm start
-```
 
 ## Troubleshooting
 
